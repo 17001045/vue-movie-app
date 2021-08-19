@@ -1,0 +1,28 @@
+.b-list {
+  width: 100vw;
+  overflow: hidden;
+  min-height: 100vh;
+}
+.b-list__header {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.b-list__movies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 0 100px 0;
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 300px);
+  }
+}
+.b-list__movies-loading {
+  position: relative;
+  min-height: 70vh;
+}

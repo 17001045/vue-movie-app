@@ -1,0 +1,7 @@
+%gradient-dark {
+  background-image: linear-gradient(
+    to top,
+    var(--dark-bg) 0%,
+    var(--dark-bg-2) 100%
+  );
+}
